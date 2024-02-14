@@ -1,0 +1,93 @@
+/** @format */
+:root {
+	--bg-color: #242424;
+	--primary-color: #e3e3e3;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--primary-color);
+}
+
+nav {
+	position: relative;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.nav-list li {
+	margin: 0 1rem;
+}
+
+.spacer {
+	display: none;
+}
+
+.my-name {
+	text-align: left;
+	margin-right: auto;
+	padding: 1em 1em;
+	background-image: url('./images/jake.jpeg');
+	background-size: cover;
+}
+
+li a {
+	display: block;
+	color: var(--primary-color);
+	text-align: center;
+	padding: 0 1em;
+	text-decoration: none;
+}
+
+.avatar {
+	top: 0;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 15%;
+}
+
+.sub-img {
+	height: 40dvh;
+	width: 100%;
+	object-fit: cover;
+}
+
+.header-img h3 {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	text-align: right;
+	background-color: var(--primary-color);
+	color: var(--bg-color);
+	padding: 1em 2em;
+	border-radius: 0.5em;
+}
+
+#about {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-align: center;
+	padding: 4em;
+}
+
+#about h2 {
+	left: 0;
+	margin-bottom: 2em;
+}
+
+#about p {
+	margin: 2em;
+}
