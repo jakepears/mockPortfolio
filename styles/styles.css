@@ -18,6 +18,7 @@ body {
 
 nav {
 	position: relative;
+	margin: 0 3rem;
 }
 
 .nav-list {
@@ -25,10 +26,35 @@ nav {
 	align-items: center;
 	list-style-type: none;
 	overflow: hidden;
+	text-align: center;
+	gap: 2rem;
 }
 
-.nav-list li {
-	margin: 0 1rem;
+.nav-link {
+	position: relative;
+	color: var(--primary-color);
+	width: auto;
+	z-index: 2;
+}
+
+.nav-link h3::after {
+	position: absolute;
+	top: 100%;
+	content: '';
+	width: 100%;
+	left: 0;
+	transform: translateX(50%);
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	height: 2px;
+	background: var(--primary-color);
+	transition: transform 0.3s ease-in-out;
+}
+
+.nav-link h3:hover::after {
+	transform: scaleX(1);
+	top: 100%;
+	transform-origin: bottom left;
 }
 
 .spacer {
@@ -47,7 +73,6 @@ li a {
 	display: block;
 	color: var(--primary-color);
 	text-align: center;
-	padding: 0 1em;
 	text-decoration: none;
 }
 
@@ -181,10 +206,16 @@ li a {
 	width: 20rem;
 }
 
-#contact form button {
+#contact form input {
 	margin: 1em;
 	padding: 1em;
 	width: 20rem;
+	transition: all 0.3s ease-in-out;
+}
+
+#contact form input:hover {
+	filter: brightness(1.2);
+	transform: scale(1.05);
 }
 
 footer {
