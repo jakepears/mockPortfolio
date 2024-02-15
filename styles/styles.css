@@ -225,3 +225,38 @@ footer {
 	align-items: center;
 	padding: 2em;
 }
+
+@media (max-width: 768px) {
+	.nav-list {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.nav-link {
+		margin: 1em;
+	}
+
+	.proj-side img {
+		width: 60dvw;
+		height: 100%;
+	}
+}
+
+@media (max-width: 1080px) {
+	.spacer {
+		display: block;
+	}
+
+	.nav-list {
+		justify-content: space-between;
+	}
+
+	.nav-link {
+		margin: 0;
+	}
+
+	.proj-side img {
+		width: 40dvw;
+		height: 100%;
+	}
+}
