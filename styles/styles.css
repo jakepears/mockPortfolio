@@ -230,6 +230,7 @@ footer {
 	.nav-list {
 		flex-direction: column;
 		gap: 0;
+		padding: 1em;
 	}
 
 	.nav-link {
